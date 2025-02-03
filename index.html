@@ -23,7 +23,7 @@
       /* Wrapper to hold the logos and create the scrolling effect */
       .logos-scroll {
         display: flex;  /* Arrange logos horizontally */
-        animation: scroll-logos 15s linear infinite;  /* Continuous scrolling animation */
+        animation: scroll-logos 20s linear infinite;  /* Continuous scrolling animation */
       }
 
       /* Individual logo styling */
@@ -35,11 +35,11 @@
 
       /* Keyframes for the scrolling effect */
       @keyframes scroll-logos {
-        0% {
-          transform: translateX(100%);  /* Start from the right */
+        from {
+          transform: translateX(0%);  /* Start from the right */
         }
-        100% {
-          transform: translateX(-100%);  /* Scroll to the left */
+        to {
+          transform: translateX(-50%);  /* Scroll to the left */
         }
       }
     </style>
